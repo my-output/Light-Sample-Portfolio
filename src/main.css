@@ -1,32 +1,45 @@
-@import url(https://fonts.bunny.net/css?family=calligraffitti:400);
+@font-face {
+    font-family: 'Mestika.otf';
+    src: url(../src/components/fonts/Mestika.otf);
+}
 
 body {
-    font-family: 'Calligraffitti', handwriting;
-    background-color: rgb(44, 27, 0);
+    font-family: 'Mestika.otf', handwriting;
+    background-color: rgb(238, 231, 212);
 }
-a {
-    padding: 1%;
-    margin: 4vh;
+h1 {
+    font-family: 'Mestika.otf', handwriting;
+}
+h2 {
+    color: rgb(78, 106, 107);
+    font-size: 250%;
+    margin: 10vh;
+    margin-bottom: -5vh;
+}
+.navbar {
+    padding: 0.5rem;
+    margin: 5vh;
     margin-top: 3rem;
     border-radius: 1rem;
 
-    background-color: rgba(175, 238, 238, 0);
-    color:white;
+    background-color: rgba(255, 217, 182, 0);
+    color:rgb(255, 250, 237);
     text-decoration: none;
     font-weight: 800;
 transition: margin-top 1s, background-color 0.5s ease-in-out, color 1s, padding 1s, border-radius 1s;
-} a:hover {
-    background-color: rgba(157, 253, 253, 0.507);
-    color:#f7fdff;
-    padding: 2%;
-    margin-top: 3.5rem;
+} .navbar:hover {
+    background-color: rgba(255, 216, 172, 0.664);
+    color:#fffffd;
+    padding: 1.5rem;
+    margin-top: 5rem;
     border-radius: 0rem;
 }
 .hero {
-    background-color: rgba(255, 90, 118, 0.375);
-    background-image: url('./fleurs.png');
+    background-color: rgba(255, 218, 148, 0.315);
+    background-image: url('../public/fleurs.png');
     background-blend-mode:color;
-    background-position-y: 15%;
+    background-position-y: 25%;
+    background-position-x: 0%;
     color: white;
     margin: 0%;
     padding: 8%;
@@ -40,7 +53,7 @@ transition: margin-top 1s, background-color 0.5s ease-in-out, color 1s, padding 
     margin-left: 3rem;
     margin-top: 1rem;
     padding: 11rem;
-    background-position-y: 12%;
+    background-position-y: 45%;
 } .hero > p {
     font-weight: 800;
     word-spacing: 10%;
