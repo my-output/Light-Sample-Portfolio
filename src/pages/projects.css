@@ -1,0 +1,9 @@
+h1 {
+    color: rgb(255, 253, 240);
+    text-align: center;
+    margin: 2rem;
+}
+.title > h1 {
+    margin: 5vh;
+    margin-bottom: -5vh;
+}
