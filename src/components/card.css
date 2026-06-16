@@ -15,19 +15,23 @@
 .card {
     text-align: center;
     font-family: 'Calligraffitti', handwriting;
-    margin: 5%;
+    margin: 10%;
     color: white;
 }
 .profile {
     margin-right: 50%;
-    transform: rotate(-5deg);
+    transform: rotate(0deg);
+    opacity: 90%;
+    transition: opacity 1s;
+} .profile:hover {
+  opacity: 100%;
 }
 .description {
-    margin-top: -30%; /* General text position -- decrement to position higher*/
+    margin-top: -28%; /* General text position -- decrement to position higher*/
     margin-left: 20%; /*length of background*/
     margin-right: 10%;
-    background-color: 	rgba(255, 232, 190, 0.5);
-    color: rgb(63, 121, 66);
+    background-color: 	rgba(201, 216, 146, 0.5);
+    color: rgb(23, 80, 77);
     padding: 5rem;
     padding-left: 20%; /* inner text margins -- increment for smaller margins*/
     font-family: 'Campuni-Test-Light.otf', sans-serif;
@@ -38,22 +42,31 @@
 }
 .description > h3 {
     font-family: 'Bonsad.otf', sans-serif;
-    color: rgb(135, 160, 111);
-    font-size: larger;
+    font-weight: 900;
+    color: rgb(101, 129, 118);
+    font-size: 180%;
+    margin-bottom: 0vh;
+    margin-top: -1vh;
     padding: 0%;
 }
-.description > span > a {
+.see-work {
     font-family: 'Bonsad.otf', sans-serif;
-    color: rgb(135, 160, 111);
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: rgb(24, 72, 117);
     text-decoration: underline;
     text-rendering: optimizeLegibility;
-    text-underline-offset: 5px;
+    text-underline-offset: 7px;
     text-decoration-style: wavy;
     text-decoration-color: rgba(240, 248, 255, 0);
     background-color: rgba(95, 158, 160, 0);
-    transition: text-decoration-color 0.5s;    
-} .description > span > a:hover {
-  text-decoration-color: rgb(135, 160, 111);
+    text-align: center;
+    margin-top: 4vh;
+    transition: text-decoration-color 0.5s, color 0.25s, text-underline-offset 0.5s;
+} .see-work:hover {
+  text-decoration-color: rgb(72, 124, 12);
+  color: rgb(72, 124, 12);
+  text-underline-offset: 5px;
 }
 img {
   border-radius: 0.5rem;

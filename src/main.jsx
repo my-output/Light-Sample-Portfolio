@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 import Card from './components/Card';
+import Summer from './pages/Summer';
+import Nature from './pages/Nature';
 import './main.css';
 
 // 1. Define the router outside the component using the new data API
@@ -20,6 +22,14 @@ const router = createBrowserRouter([
       {
         path: 'projects', // Relative path (becomes /projects)
         element: <Projects />,
+      },
+      {
+        path: 'summer',
+        element: <Summer />,
+      },
+      {
+        path: 'nature',
+        element: <Nature />,
       },
     ],
   },

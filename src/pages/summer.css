@@ -1,0 +1,91 @@
+/* Container for all items */
+.summer-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem; /* Space between each image/aside pair */
+  width: 100%;
+}
+
+/* Individual Pair Container */
+.gallery-item {
+  display: flex;
+  flex-direction: column; /* Stack image/aside on mobile */
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.gallery-item > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* The Aside Styling */
+.gallery-item > aside {
+  position: relative; /* No longer absolute to the whole page */
+  background-color: rgba(114, 196, 199, 0.5);
+  color: #f4fffb;
+  padding: 2rem;
+  text-align: center;
+  width: 80%; /* Default width */
+  margin-top: -3rem; /* Overlap effect: pulls aside up over the image */
+  z-index: 2;
+}
+
+.gallery-item > h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 0.5rem 0;
+}
+
+/* --- Media Queries --- */
+
+/* Tablet */
+@media (min-width: 768px) {
+  .gallery-item {
+    flex-direction: row; /* Image left, aside right (or vice versa) */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .gallery-item > img {
+    width: 45%; /* Image is about half its size */
+  }
+
+  .gallery-item > aside {
+    width: 40%;
+    margin-top: 0; /* Remove overlap for side-by-side */
+    margin-left: -2rem; /* Optional: slight overlap if desired */
+  }
+}
+
+/* Laptop & Desktop */
+@media (min-width: 1024px) {
+  .summer-gallery {
+    gap: 6rem;
+  }
+
+  .gallery-item > aside {
+    padding: 3.5rem;
+    font-size: 1.1rem;
+  }
+  
+  /* Alternate layout for even items (Image Right, Aside Left) */
+  .gallery-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+/* Max width constraints */
+@media (min-width: 1440px) {
+  .summer-gallery {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the whole gallery */
+  }
+  
+  .gallery-item > aside {
+    padding: 4rem;
+  }
+}   
