@@ -8,19 +8,19 @@ import Summer from './pages/Summer';
 import Nature from './pages/Nature';
 import './main.css';
 
-// 1. Define the router outside the component using the new data API
+// Creating a routing system
 const router = createBrowserRouter([
   {
-    path: '/',
-    element: <Home />, // layout component
-    errorElement: <NotFound />,
-    children: [
+    path: '/', // Root path
+    element: <Home />, // layout component -- This is the hero/nav banner
+    errorElement: <NotFound />, // Whenever you get lost
+    children: [ // Every page connected to the root path, branching from Home,
       {
         index: true, // Equivalent to the old <Route index ... />
-        element: <Card />,
+        element: <Card />, // 'About me' on home page
       },
       {
-        path: 'projects', // Relative path (becomes /projects)
+        path: 'projects', // Relative path (becomes '/path')
         element: <Projects />,
       },
       {
@@ -35,10 +35,9 @@ const router = createBrowserRouter([
   },
 ]);
 
-// 2. Simple App component that just provides the router
+// Only pass router to App
 function App() {
   return <RouterProvider router={router} />;
 }
 
-// 3. Render the App
-createRoot(document.getElementById('root')).render(<App />);   
+createRoot(document.getElementById('root')).render(<App />);
