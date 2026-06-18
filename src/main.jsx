@@ -33,7 +33,11 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+],
+  {
+    basename: '/Light-Sample-Portfolio/' // For deploy
+  }
+);
 
 // Only pass router to App
 function App() {

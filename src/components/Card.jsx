@@ -2,9 +2,9 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider, Outlet, Link } from 'react-router-dom';
 
-import './card.css';
 import Photos from './Photos';
-
+import leafImage from '/leaf-edit.jpeg';
+import './card.css';
 
 const myWidth = 1600/3;
 const myHeight = 1200/3;
@@ -14,7 +14,7 @@ function Card() {
         <article className='card'>
 
             <div className='profile'>
-                <Photos src={'/leaf-edit.jpeg'} width={myWidth/1.5} height={myHeight} className='profile-img'/>
+                <Photos src={leafImage} width={myWidth/1.5} height={myHeight} className='profile-img'/>
             </div>
 
             <div className='description'>

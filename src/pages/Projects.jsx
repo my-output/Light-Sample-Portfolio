@@ -1,6 +1,8 @@
 import React from 'react';
 import './projects.css';
 import Photos from '../components/Photos.jsx';
+import days from '/days.jpeg';
+import leafImage from '/leaf-edit.jpeg';
 
 // Create standard widths/heights
 const myWidth = 1800/3;
@@ -14,13 +16,13 @@ export default function Projects() {
         <body>
             <h2>Portfolio</h2>
             <article>
-                <a href='/summer' className='archive-link'>
+                <a href={'summer'} className='archive-link'>
                     <p className='album'>Summer</p>
-                    <Photos src='/days.jpeg' width={myWidth} height={myHeight} />
+                    <Photos src={days} width={myWidth} height={myHeight} />
                 </a>
-                <a href='/nature' className='archive-link'>
+                <a href={'nature'} className='archive-link'>
                 <p className='album'>Nature</p>
-                    <Photos src='/leaf-edit.jpeg' width={myWidth} height={myHeight} />
+                    <Photos src={leafImage} width={myWidth} height={myHeight} />
                 </a>
             </article>
             
