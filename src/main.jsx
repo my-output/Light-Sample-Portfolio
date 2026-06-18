@@ -8,6 +8,13 @@ import Summer from './pages/Summer';
 import Nature from './pages/Nature';
 import './main.css';
 
+// Handle query parameter redirect from 404.html
+const params = new URLSearchParams(window.location.search);
+const redirect = params.get('redirect');
+if (redirect) {
+  window.history.replaceState(null, null, '/Light-Sample-Portfolio' + redirect);
+}
+
 // Creating a routing system
 const router = createBrowserRouter([
   {
