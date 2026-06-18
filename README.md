@@ -1,7 +1,7 @@
 # Sample Photography Portfolio
 This is a sample of a photo portfolio I designed and built with React and Vite. It contains much of the same content in the original dark version using a light UI and implementing UX changes. There are new links to more pages to show a different user experience design in a portfolio. It is meant to be a demonstration of my current knowledge of React, as well as a way to practice web design. Using an updated configuration of React router, I have been able to create links more dynamically. The site is very minimal, and is meant as an example of a simple front-end. Going forward, more features may be added to the site as well.
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7efdc398-5ce7-439b-a01e-1a41b46461cd" />
+<img width="1868" height="1052" alt="image" src="https://github.com/user-attachments/assets/5ab18933-53e2-44bd-b505-8535956a69f0" />
 
 ## Photos
 The photos included are the same photography samples used originally to build the website.
