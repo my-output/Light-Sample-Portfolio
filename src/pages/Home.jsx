@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <nav className='hero'>
-        <h1>Example Site</h1>
+        <h1>Photo Portfolio</h1>
         <Link to="/" className='navbar'>Home</Link>
         <Link to="/projects" className='navbar'>Portfolio</Link>
       </nav>
