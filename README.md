@@ -1,3 +1,11 @@
+# Sample Photography Portfolio
+This website is a sample of a photo portfolio I designed and built with React and Vite. It contains much of the same content in the original dark version using a light UI and implementing UX changes. There are new links to more pages to show a different user experience design in a portfolio. It is meant to be a demonstration of my current knowledge of React, as well as a way to practice web design. Using an updated configuration of React router, I have been able to create links more dynamically. The site is very minimal, and is meant as an example of a simple front-end. Going forward, more features may be added to the site as well.
+
+## Photos
+The photos included are the same photography samples used originally to build the website.
+They are seperated by themes to show a sample use case in how they may be presented.
+They're mainly meant for demonstration purposes.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,7 +18,3 @@ Currently, two official plugins are available:
 ## React Compiler
 
 The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
