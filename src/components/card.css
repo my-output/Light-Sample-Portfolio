@@ -28,7 +28,7 @@
 }
 .description {
     margin-top: -28%; /* General text position -- decrement to position higher*/
-    margin-left: 20%; /*length of background*/
+    margin-left: 30%; /*length of background*/
     margin-right: 10%;
     background-color: 	rgba(201, 216, 146, 0.5);
     color: rgb(23, 80, 77);

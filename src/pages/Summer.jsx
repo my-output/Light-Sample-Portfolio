@@ -13,6 +13,17 @@ const myHeight = 1200/3;
 const longHeight = 1400;
 const longWidth = 1800;
 
+// INCLUDE: 'Gallery.jsx' for 'gallery-item'
+// EDIT: 'Card.jsx' can a component with a passed on variable include html text?
+/*Ex:
+    <Component VARIABLE={
+        <article>
+            <h1 />
+            <img />
+            <p />
+        </article>
+        } />
+*/
 export default function Summer() {
     console.log("Summer component!");
     return (

@@ -14,13 +14,12 @@ const redirect = params.get('redirect');
 if (redirect) {
   window.history.replaceState(null, null, '/Light-Sample-Portfolio' + redirect);
 }
-
 // Creating a routing system
 const router = createBrowserRouter([
   {
     path: '/', // Root path
     element: <Home />, // layout component -- This is the hero/nav banner
-    errorElement: <NotFound />, // Whenever you get lost
+    errorElement: <NotFound />, // Whenever you get lost...
     children: [ // Every page connected to the root path, branching from Home,
       {
         index: true, // Equivalent to the old <Route index ... />
@@ -42,7 +41,7 @@ const router = createBrowserRouter([
   },
 ],
   {
-    basename: '/Light-Sample-Portfolio/' // For deploy
+    basename: '/Light-Sample-Portfolio/' // For deploying
   }
 );
 
