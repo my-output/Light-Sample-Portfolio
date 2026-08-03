@@ -6,6 +6,7 @@ import img2 from '/dayshadow.jpeg';
 import img3 from '/beach-house.jpeg';
 import img4 from '/surfboards.png';
 import img5 from '/motion.jpeg';
+import { Link } from 'react-router-dom';
 
 // Create standard widths/heights
 const myWidth = 1800/3;
@@ -73,6 +74,10 @@ export default function Summer() {
                         <p>Date</p>
                     </aside>
                 </div>
+                
+                <footer>
+                    <Link to="/projects" className='foot'>Back to Albums ⇀</Link>
+                </footer>
 
             </article>   
         </>

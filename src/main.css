@@ -38,22 +38,21 @@ transition: margin-top 1s, background-color 0.5s ease-in-out, color 1s, padding 
     background-color: rgba(255, 218, 148, 0.315);
     background-image: url('../public/fleurs.png');
     background-blend-mode:color;
-    background-position-y: 25%;
-    background-position-x: 0%;
+    background-position: center;
+    background-size: 200%;
     color: white;
     margin: 0%;
-    padding: 8%;
     padding:10rem;
     border-radius: 0.5rem;
     text-align: center;
-    transition: border-radius 2s, margin-top 1s, margin-left 4s, margin-right 4s, padding 2s ease-in-out, background-position-y 3s;
+    transition: border-radius 3s, margin-top 1s ease, margin-left 5s ease-in-out, margin-right 5s ease-in-out, padding 2s ease-in-out, background-size 1s;
 }.hero:hover {
     border-radius: 20rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
-    margin-top: 1rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    margin-top: 0.5rem;
     padding: 11rem;
-    background-position-y: 45%;
+    background-size: 220%;
 } .hero > p {
     font-weight: 800;
     word-spacing: 10%;

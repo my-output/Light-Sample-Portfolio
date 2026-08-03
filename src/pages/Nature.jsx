@@ -62,8 +62,9 @@ export default function Nature() {
                         <p>Date</p>
                     </aside>
                 </div>
-
-            </article>   
+               
+            </article>
+            <footer></footer>
         </>
     );
 }
