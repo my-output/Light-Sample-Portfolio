@@ -39,20 +39,6 @@
   font-size: 1.2rem;
   padding: 0.5rem 0;
 }
-footer {
-  color: green;
-  padding: 0rem;
-  padding: 2rem;
-  margin-top: -5rem;
-  font-weight: 700;
-  letter-spacing: 5%;
-  text-align: right;
-} .foot {
-  color: rgb(50, 83, 30);
-  transition: all 0.5s;
-} .foot:hover {
-  color: #f4fffb;
-}
 /* --- Media Queries --- */
 
 /* Tablet */

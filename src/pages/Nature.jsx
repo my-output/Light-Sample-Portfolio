@@ -6,6 +6,7 @@ import img2 from '/ferns.jpeg';
 import img3 from '/flowers.jpeg';
 import img4 from '/grass.jpeg';
 import img5 from '/petals.jpeg';
+import { Link } from 'react-router-dom';
 
 // Create standard widths/heights
 const myWidth = 1800/3;
@@ -64,7 +65,8 @@ export default function Nature() {
                 </div>
                
             </article>
-            <footer></footer>
+            <Link to='/projects' className='foot'>Back To Albums ⇀</Link>
+            
         </>
     );
 }
